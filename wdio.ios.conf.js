@@ -8,6 +8,7 @@
     // WebdriverIO supports running e2e tests as well as unit and component tests.
     runner: 'local',
     port: 4724,
+    relaxedSecurity: true,
     //
     // ==================
     // Specify Test Files
@@ -58,7 +59,7 @@
         "appium:platformVersion":"18.1",
         "appium:DeviceName":"iphone 16",
         "appium:automationName":"XCUITest",
-        'appium:app': path.join(process.cwd(), 'App', 'iOS','UIKitCatalog.app'),
+        'appium:app': path.join(process.cwd(), 'App', 'iOS','wdiodemoapp.app'),
         'appium:noReset': true,
         'appium:autoAcceptAlerts': true,
         'appium:newCommandTimeout': 300
